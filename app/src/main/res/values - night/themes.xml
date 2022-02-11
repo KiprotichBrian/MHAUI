@@ -1,0 +1,176 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorPrimaryDark</item>
+        <item name="colorSecondaryVariant">@color/colorPrimaryGreen</item>
+        <item name="colorOnSecondary">@color/colorPrimaryBlack</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/colorPrimaryBlack</item>
+        <item name="android:autofilledHighlight" tools:targetApi="o">@android:color/transparent
+        </item>
+        <!--        Navigation bar color-->
+        <item name="android:navigationBarColor">@color/colorSecondaryAccent</item>
+        <!--ActionBar color-->
+        <item name="android:actionBarStyle">@color/white</item>
+
+    </style>
+
+    <!-- dark application theme. -->
+    <style name="darkTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#000</item>
+        <item name="colorPrimaryDark">#000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="background_color">#131313</item>
+        <!--     Our app's background changes to black when dark mode is activated -->
+        <item name="text_color">#ffff</item>
+        <!--     text and button color change to white to contrast with the app's background-->
+        <item name="button_color">#ffff</item>
+    </style>
+
+
+    <style name="App.Compat" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:autofilledHighlight" tools:targetApi="o">@android:color/transparent
+        </item>
+
+        <!--        Navigation bar color-->
+        <item name="android:navigationBarColor">@color/colorSecondaryAccent</item>
+
+    </style>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:textColor">#ffffffff</item>
+
+        <item name="android:autofilledHighlight" tools:targetApi="o">@android:color/transparent
+        </item>
+
+        <!--        Navigation bar color-->
+        <item name="android:navigationBarColor">@color/colorSecondaryAccent</item>
+
+    </style>
+
+    <style name="Theme.App" parent="Theme.MaterialComponents">
+        ...
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorSurface">@color/cardview_light_background</item>
+        <item name="colorOnSurface">@color/colorPrimaryGreen</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent
+        </item>
+        <item name="android:autofilledHighlight" tools:targetApi="o">@android:color/transparent
+        </item>
+
+        <!--        Navigation bar color-->
+        <item name="android:navigationBarColor">@color/colorSecondaryAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+    <style name="Theme.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorPrimaryDark</item>
+        <item name="colorSecondaryVariant">@color/colorPrimaryGreen</item>
+        <item name="colorOnSecondary">@color/colorPrimaryBlack</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/colorPrimaryBlack</item>
+
+        <item name="android:autofilledHighlight" tools:targetApi="o">@android:color/transparent
+        </item>
+
+        <!--        Navigation bar color-->
+        <item name="android:navigationBarColor">@color/colorSecondaryAccent</item>
+
+<!--        rave UI-->
+        <item name="OTPButtonStyle">@style/otpBtnStyle</item>
+        <item name="PayButtonStyle">@style/payBtnStyle</item>
+        <item name="PinButtonStyle">@style/pinButtonStyle</item>
+        <item name="OTPHeaderStyle">@style/otpHeaderStyle</item>
+        <item name="TabLayoutStyle">@style/tabLayoutStyle</item>
+        <item name="PinHeaderStyle">@style/pinHeaderStyle</item>
+        <item name="SavedCardButtonStyle">@style/svdCardsBtnStyle</item>
+    </style>
+
+    <style name="Theme.NoActionBarLogin" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorPrimaryDark</item>
+        <item name="colorSecondaryVariant">@color/colorPrimaryGreen</item>
+        <item name="colorOnSecondary">@color/colorPrimaryBlack</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorPrimary</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/colorPrimaryBlack</item>
+
+        <item name="android:autofilledHighlight" tools:targetApi="o">@android:color/transparent
+        </item>
+
+        <!--        Navigation bar color-->
+        <item name="android:navigationBarColor">@color/colorSecondaryAccent</item>
+
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="MyTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">@color/colorPrimaryBlack</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="boxStrokeColor">@color/colorPrimaryBlack</item>
+    </style>
+
+    <style name="MyTextInputEditText" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.MyApplication">
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/rating</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="ChipTextStyle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/colorPrimaryBlack</item>
+    </style>
+
+
+</resources>

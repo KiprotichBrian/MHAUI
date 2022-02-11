@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "316945510188",
+    "project_id": "myhealth-f377f",
+    "storage_bucket": "myhealth-f377f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316945510188:android:98b0ef08cf5632f92f8689",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316945510188-3jhc83v4ok0m37o1hj2j4u8jst9vv84v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgZx9IZ3zReyEyXYKBTvxzN-QWcboa8Ew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316945510188-3jhc83v4ok0m37o1hj2j4u8jst9vv84v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316945510188:android:89bd67f1916d207b2f8689",
+        "android_client_info": {
+          "package_name": "com.mobile.myHealthAfrica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316945510188-g4qkv2viv45afii666ioo2t4tbqrn2fe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobile.myHealthAfrica",
+            "certificate_hash": "35e7ec240a9b63b00d252ce51efff82035ba8f4f"
+          }
+        },
+        {
+          "client_id": "316945510188-3jhc83v4ok0m37o1hj2j4u8jst9vv84v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgZx9IZ3zReyEyXYKBTvxzN-QWcboa8Ew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316945510188-3jhc83v4ok0m37o1hj2j4u8jst9vv84v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

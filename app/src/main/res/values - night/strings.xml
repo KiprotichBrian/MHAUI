@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">My Health Africa</string>
+
+    <!--    Onboarding activity-->
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GET STARTED</string>
+
+    <string name="slide_1_title">Consult a doctor online</string>
+    <string name="slide_1_desc">Seek medical help and get examined by a doctor from
+        wherever you are!</string>
+
+    <string name="slide_2_title">Speak to a doctor</string>
+    <string name="slide_2_desc">Get attended to from the comfort of your home!</string>
+
+    <string name="welcome_title">Welcome to My Health Africa</string>
+    <string name="welcome_desc">Get attended to from the comfort of your home!</string>
+
+    <string name="slide_3_title">Cashless Payment option</string>
+    <string name="slide_3_desc">With our payment options , you can avoid cash payments !</string>
+
+    <string name="slide_4_title">Avoid hospital queues</string>
+    <string name="slide_4_desc">Book/schedule your appointment and avoid long hospital queues
+        !</string>
+    <string name="login">login</string>
+    <string name="sign_up">sign up</string>
+    <string name="preview_app">Preview app</string>
+    <string name="my_health_africa_logo">My health africa logo</string>
+    <string name="doctor_s_name">Doctor\'s name</string>
+    <string name="doctor_s_avatar">Doctor\'s avatar</string>
+    <string name="title_location">Title, location</string>
+    <string name="doctor_description">Doctor description</string>
+    <string name="appointment">Appointment</string>
+    <string name="telemedicine">Telemedicine</string>
+    <string name="in_person">In-person</string>
+    <string name="we_will_send_you_a_one_time_password_on_this_mobile_number">We will send you a
+        <b>One Time Password </b> on this mobile number to confirm your identity.</string>
+    <string name="phone_number">Phone number</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="generate_otp">generate otp</string>
+    <string name="or_sign_in_using">Or sign in using </string>
+    <string name="facebook">facebook</string>
+    <string name="google">Email</string>
+    <string name="new_user">New User ?</string>
+    <string name="register_here">register here</string>
+    <string name="otp">OTP</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="received_message">Received Message</string>
+    <string name="verify_continue"><![CDATA[Verify & Continue]]></string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="enter_otp_sent_to_your_mobile_number">Enter OTP sent to your mobile number</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="didn_t_receive_otp_resend">Didn\'t receive OTP ?</string>
+    <string name="enter_your_phone_number">Enter your Phone Number</string>
+    <string name="create_your_account">Create Your Account</string>
+    <string name="password">Password</string>
+    <string name="email_address">Email address</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="resend">RESEND</string>
+    <string name="find_your_doctor">Search by condition, procedures, specialties, hospital,
+        clinic, location or insurance.</string>
+    <string name="something_went_wrong">Something
+        went wrong, please turn back and check your booking again</string>
+    <string name="booking_failed">Booking Failed</string>
+    <string name="back_to_booking">Back To Booking</string>
+    <string name="please_check_your_whatsapp_sms_for_appointment_details">Please check your whatsapp/sms for appointment details</string>
+    <string name="got_it">Got It</string>
+    <string name="booking_successful">Booking Successful</string>
+    <string name="close_icon">close icon</string>
+    <string name="see_more">Dr.XXXXXX is a highly experienced Pediatrician and Immunologist with 42 years practicing as a medical professional. Dr. xxxxxx obtained her Master’s in Pediatrics from the University of Nairobi.is a highly experienced Pediatrician and Immunologist with 42 years practicing as a medical professional. Dr. xxxxxx obtained her Master’s in Pediatrics from the University of Nairobi.</string>
+    <string name="doctor_image">Doctor image</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="schedule">Select Date</string>
+    <string name="dr_specialty">Paediatrician</string>
+    <string name="specialties">Top Specialties</string>
+    <string name="biography">Biography</string>
+    <string name="hospital_name">Hospital name</string>
+    <string name="doctor_designation">General practitioner</string>
+    <string name="doctor_name">Doctor name</string>
+    <string name="select_schedule_time">Select Schedule Time</string>
+
+
+</resources>

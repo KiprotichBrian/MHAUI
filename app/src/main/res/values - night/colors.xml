@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009DA4</color>
+    <color name="colorPrimaryDark">#00CFD5</color>
+    <color name="colorAccent">#FFA967</color>
+    <color name="colorPrimaryBlack">#FF000000</color>
+    <color name="colorPrimaryGreen">#009D4E</color>
+    <color name="colorSecondary">#FFEA00</color>
+    <color name="colorSecondaryAccent">#F2F2F2</color>
+    <color name="rating">#FFDF00</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="google_red">#EA4335</color>
+    <color name="facebook_blue">#4267B2</color>
+
+    <color name="transparent">#00000000</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">@color/colorPrimary</color>
+    <color name="dot_dark_screen2">@color/colorPrimary</color>
+    <color name="dot_dark_screen3">@color/colorPrimary</color>
+    <color name="dot_dark_screen4">@color/colorPrimary</color>
+    <color name="dot_dark_success">@color/colorPrimary</color>
+    <color name="dot_dark_failed">@color/colorPrimary</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">@color/colorPrimaryDark</color>
+    <color name="dot_light_screen2">@color/colorPrimaryDark</color>
+    <color name="dot_light_screen3">@color/colorPrimaryDark</color>
+    <color name="dot_light_screen4">@color/colorPrimaryDark</color>
+    <color name="dot_light_success">@color/colorPrimaryDark</color>
+    <color name="dot_light_failed">@color/colorPrimaryDark</color>
+
+    <array name="array_dot_active">
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_success</item>
+        <item>@color/dot_dark_failed</item>
+    </array>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bubbleNavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.gauravk.bubblenavigation.BubbleNavigationConstraintView
+        android:id="@+id/bubbleNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:padding="8dp"
+        app:bnc_mode="inside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/c_item_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="@color/colorPrimary"
+            app:bt_colorInactive="@color/colorPrimaryBlack"
+            app:bt_icon="@drawable/home"
+            app:bt_padding="@dimen/internal_padding"
+            app:bt_shape="@drawable/btn_10dp_white"
+            app:bt_title="Home"
+            app:bt_titlePadding="@dimen/title_padding"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/c_item_doc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="@color/colorPrimary"
+            app:bt_colorInactive="@color/colorPrimaryBlack"
+            app:bt_icon="@drawable/explorer"
+            app:bt_padding="@dimen/internal_padding"
+            app:bt_shape="@drawable/btn_10dp_white"
+            app:bt_title="Explore"
+            app:bt_titlePadding="@dimen/title_padding"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/c_item_hospitals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="@color/colorPrimary"
+            app:bt_colorInactive="@color/colorPrimaryBlack"
+            app:bt_icon="@drawable/messenger"
+            app:bt_padding="@dimen/internal_padding"
+            app:bt_shape="@drawable/btn_10dp_white"
+            app:bt_title="Chat"
+            app:bt_titlePadding="@dimen/title_padding"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="12dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/c_item_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="@color/colorPrimary"
+            app:bt_colorInactive="@color/colorPrimaryBlack"
+            app:bt_icon="@drawable/profile"
+            app:bt_padding="@dimen/internal_padding"
+            app:bt_shape="@drawable/btn_10dp_white"
+            app:bt_title="My Account"
+            app:bt_titlePadding="@dimen/title_padding"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="12dp" />
+
+    </com.gauravk.bubblenavigation.BubbleNavigationConstraintView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
