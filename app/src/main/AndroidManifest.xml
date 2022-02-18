@@ -82,11 +82,6 @@
             android:parentActivityName=".MainActivity"
             android:theme="@style/Theme.MyApplication" />
         <activity
-            android:name=".Specialties"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.MyApplication" />
-        <activity
             android:name=".MainActivity"
             android:exported="false"
             android:theme="@style/Theme.NoActionBar" />
@@ -104,15 +99,6 @@
             android:exported="false"
             android:parentActivityName=".Preview"
             android:theme="@style/Theme.NoActionBar" />
-        <activity
-            android:name=".DoctorList"
-            android:exported="false"
-            android:parentActivityName=".Preview" />
-        <activity
-            android:name=".DoctorListHome"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.MyApplication" />
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true"

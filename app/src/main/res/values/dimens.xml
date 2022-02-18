@@ -39,4 +39,6 @@
 
     <dimen name="passcode_btn">60dp</dimen>
     <dimen name="passcode_btn_margin">15dp</dimen>
+
+    <dimen name="icon">47dp</dimen>
 </resources>

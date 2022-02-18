@@ -3,6 +3,42 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/drawable-v24/btn_10dp_white.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/drawable-v24/btn_socials.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/drawable-v24/card_drawable_inactive.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/drawable/bg_gradient.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/drawable/bg_input.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/drawable/bg_input1.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/drawable/bg_package.xml" value="0.1712962962962963" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/drawable/bg_receive_message.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/drawable/bg_search_widget.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/drawable/bg_send_message.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/drawable/btn_10dp.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/drawable/button_ripple_black.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/drawable/button_ripple_blue.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/drawable/calendar_item_background.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/drawable/card_drawable.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1712962962962963" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/drawable/round_top.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout-sw600dp/item_discover_services.xml" value="0.131640625" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout/activity_enter_pin.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout/activity_forgot_password.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout/activity_login.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout/card_medical_package.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout/custom_keyboard.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout/fragment_home.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout/fragment_main.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout/item_discover_services.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout/item_doctor_card.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout/item_doctor_card_home.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout/item_hospital.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout/item_message_receive.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout/item_message_send.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout/item_selected_calendar.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout/item_services.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout/item_services_home.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/kipro/AndroidStudioProjects/MHAapp/app/src/main/res/layout/recycler_packages.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/kipro/AndroidStudioProjects/MyApplication/app/src/main/res/drawable-v24/btn_10dp_sec.xml" value="0.1787037037037037" />
         <entry key="..\:/Users/kipro/AndroidStudioProjects/MyApplication/app/src/main/res/drawable-v24/btn_10dp_white.xml" value="0.16203703703703703" />
         <entry key="..\:/Users/kipro/AndroidStudioProjects/MyApplication/app/src/main/res/drawable-v24/btn_socials.xml" value="0.17592592592592593" />

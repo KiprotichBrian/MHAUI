@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
-import com.mobile.myHealth.Adapters.ServicesAdapterHome;
 import com.mobile.myHealth.Models.ServicesModel;
 
 import java.util.ArrayList;
@@ -16,7 +15,6 @@ import java.util.Objects;
 public class SpecialtiesHome extends AppCompatActivity {
 
 private LinearLayoutManager mLinearLayoutManager;
-private ServicesAdapterHome mServicesAdapter;
 private RecyclerView mRecycler;
 
 @Override
@@ -46,7 +44,5 @@ protected void onCreate(Bundle savedInstanceState) {
 	SpecialtyList.add(new ServicesModel(R.drawable.dental, "Kiprotich Brian"));
 	SpecialtyList.add(new ServicesModel(R.drawable.dental, "Kiprotich Brian"));
 
-	mServicesAdapter = new ServicesAdapterHome(this,SpecialtyList);
-	mRecycler.setAdapter(mServicesAdapter);
 }
 }

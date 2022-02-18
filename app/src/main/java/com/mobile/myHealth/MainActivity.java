@@ -7,9 +7,7 @@ import android.os.Bundle;
 
 import com.gauravk.bubblenavigation.BubbleNavigationConstraintView;
 import com.mobile.myHealth.Fragments.AccountFragment;
-import com.mobile.myHealth.Fragments.DoctorFragment;
-import com.mobile.myHealth.Fragments.HomeFragment;
-import com.mobile.myHealth.Fragments.HospitalFragment;
+import com.mobile.myHealth.Fragments.ExploreFragment;
 import com.mobile.myHealth.Fragments.MainFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,7 +22,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 	mBubbleNavigation = findViewById(R.id.bubbleNavigation);
 	getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-			new HomeFragment()).commit();
+			new MainFragment()).commit();
 
 	mBubbleNavigation.setNavigationChangeListener((view, position) -> {
 		switch (position){
@@ -32,10 +30,10 @@ protected void onCreate(Bundle savedInstanceState) {
 				selectedFragment = new MainFragment();
 				break;
 			case 1:
-				selectedFragment = new DoctorFragment();
+				selectedFragment = new ExploreFragment();
 				break;
 			case 2:
-				selectedFragment = new HospitalFragment();
+				selectedFragment = new ExploreFragment();
 				break;
 			case 3:
 				selectedFragment = new AccountFragment();

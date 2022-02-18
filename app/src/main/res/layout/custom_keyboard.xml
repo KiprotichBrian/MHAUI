@@ -17,15 +17,15 @@
 
 
             <LinearLayout
+                android:id="@+id/one_btn"
                 android:layout_width="@dimen/passcode_btn"
                 android:layout_height="@dimen/passcode_btn"
                 android:layout_margin="@dimen/passcode_btn_margin"
-                android:orientation="vertical"
                 android:background="@drawable/numeric_button"
-                android:gravity="center"
                 android:clickable="true"
-                android:id="@+id/one_btn"
-                android:focusable="true">
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -36,15 +36,15 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/two_btn"
                 android:layout_width="@dimen/passcode_btn"
                 android:layout_height="@dimen/passcode_btn"
                 android:layout_margin="@dimen/passcode_btn_margin"
-                android:orientation="vertical"
                 android:background="@drawable/numeric_button"
-                android:gravity="center"
                 android:clickable="true"
-                android:id="@+id/two_btn"
-                android:focusable="true">
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -55,15 +55,15 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/three_btn"
                 android:layout_width="@dimen/passcode_btn"
                 android:layout_height="@dimen/passcode_btn"
                 android:layout_margin="@dimen/passcode_btn_margin"
-                android:orientation="vertical"
                 android:background="@drawable/numeric_button"
-                android:gravity="center"
                 android:clickable="true"
-                android:id="@+id/three_btn"
-                android:focusable="true">
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -80,16 +80,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center">
+
             <LinearLayout
+                android:id="@+id/four_btn"
                 android:layout_width="@dimen/passcode_btn"
                 android:layout_height="@dimen/passcode_btn"
                 android:layout_margin="@dimen/passcode_btn_margin"
-                android:orientation="vertical"
                 android:background="@drawable/numeric_button"
-                android:gravity="center"
                 android:clickable="true"
-                android:id="@+id/four_btn"
-                android:focusable="true">
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -100,15 +101,15 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/five_btn"
                 android:layout_width="@dimen/passcode_btn"
                 android:layout_height="@dimen/passcode_btn"
                 android:layout_margin="@dimen/passcode_btn_margin"
-                android:orientation="vertical"
                 android:background="@drawable/numeric_button"
-                android:gravity="center"
                 android:clickable="true"
-                android:id="@+id/five_btn"
-                android:focusable="true">
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -119,15 +120,15 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/six_btn"
                 android:layout_width="@dimen/passcode_btn"
                 android:layout_height="@dimen/passcode_btn"
                 android:layout_margin="@dimen/passcode_btn_margin"
-                android:orientation="vertical"
                 android:background="@drawable/numeric_button"
-                android:gravity="center"
                 android:clickable="true"
-                android:id="@+id/six_btn"
-                android:focusable="true">
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -146,15 +147,15 @@
             android:gravity="center">
 
             <LinearLayout
+                android:id="@+id/seven_btn"
                 android:layout_width="@dimen/passcode_btn"
                 android:layout_height="@dimen/passcode_btn"
                 android:layout_margin="@dimen/passcode_btn_margin"
-                android:orientation="vertical"
                 android:background="@drawable/numeric_button"
-                android:gravity="center"
                 android:clickable="true"
-                android:id="@+id/seven_btn"
-                android:focusable="true">
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -165,15 +166,15 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/eight_btn"
                 android:layout_width="@dimen/passcode_btn"
                 android:layout_height="@dimen/passcode_btn"
                 android:layout_margin="@dimen/passcode_btn_margin"
-                android:orientation="vertical"
                 android:background="@drawable/numeric_button"
-                android:gravity="center"
                 android:clickable="true"
-                android:id="@+id/eight_btn"
-                android:focusable="true">
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -184,15 +185,15 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/nine_btn"
                 android:layout_width="@dimen/passcode_btn"
                 android:layout_height="@dimen/passcode_btn"
                 android:layout_margin="@dimen/passcode_btn_margin"
-                android:orientation="vertical"
                 android:background="@drawable/numeric_button"
-                android:gravity="center"
                 android:clickable="true"
-                android:id="@+id/nine_btn"
-                android:focusable="true">
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -211,25 +212,25 @@
             android:gravity="center">
 
             <ImageButton
+                android:id="@+id/delete_btn"
                 android:layout_width="@dimen/passcode_btn"
                 android:layout_height="@dimen/passcode_btn"
                 android:layout_margin="@dimen/passcode_btn_margin"
-                android:src="@mipmap/ic_action_backspace"
-                android:hapticFeedbackEnabled="true"
-                android:id="@+id/delete_btn"
                 android:background="@android:color/transparent"
-                android:contentDescription="@string/clear" />
+                android:contentDescription="@string/clear"
+                android:hapticFeedbackEnabled="true"
+                android:src="@mipmap/ic_action_backspace" />
 
             <LinearLayout
+                android:id="@+id/zero_btn"
                 android:layout_width="@dimen/passcode_btn"
                 android:layout_height="@dimen/passcode_btn"
                 android:layout_margin="@dimen/passcode_btn_margin"
-                android:orientation="vertical"
                 android:background="@drawable/numeric_button"
-                android:gravity="center"
                 android:clickable="true"
-                android:id="@+id/zero_btn"
-                android:focusable="true">
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -240,14 +241,14 @@
             </LinearLayout>
 
             <ImageButton
+                android:id="@+id/ok_btn"
                 android:layout_width="@dimen/passcode_btn"
                 android:layout_height="@dimen/passcode_btn"
                 android:layout_margin="@dimen/passcode_btn_margin"
-                android:src="@mipmap/ic_ok"
-                android:hapticFeedbackEnabled="true"
-                android:id="@+id/ok_btn"
                 android:background="@android:color/transparent"
-                android:contentDescription="@string/ok" />
+                android:contentDescription="@string/ok"
+                android:hapticFeedbackEnabled="true"
+                android:src="@mipmap/ic_ok" />
         </TableRow>
 
     </TableLayout>
