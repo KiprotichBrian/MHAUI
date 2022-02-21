@@ -1,6 +1,5 @@
 package com.mobile.myHealth.Fragments
 
-import android.app.Activity
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.os.Bundle
@@ -8,7 +7,9 @@ import android.view.View
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.SnapHelper
 import com.mobile.myHealth.Adapters.PackageRecyclerAdapter
 import com.mobile.myHealth.R
 import kotlinx.android.synthetic.main.recycler_packages.*
@@ -24,12 +25,14 @@ class MainFragment : Fragment() {
         val bookAppointment = view.findViewById<ImageView>(R.id.icon_book_appointment)
         val medication = view.findViewById<ImageView>(R.id.my_medication)
         val promotions = view.findViewById<ImageView>(R.id.icon_discounts_promotions)
-        val recycler = view.findViewById<RecyclerView>(R.id.recycler_packages)
+        val recycler = view.findViewById<RecyclerView>(R.id.recyclerPackages)
 
         recycler.layoutManager = LinearLayoutManager(activity)
         val adapter = PackageRecyclerAdapter(itemsList)
         recycler.adapter = adapter
         recycler.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
+        val snapHelper: SnapHelper = PagerSnapHelper()
+        snapHelper.attachToRecyclerView(recycler)
 
         itemsList.add("Item 1")
         itemsList.add("Item 2")

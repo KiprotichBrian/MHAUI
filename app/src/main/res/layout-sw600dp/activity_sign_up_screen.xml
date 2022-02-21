@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryLight"
-    tools:context=".Login">
+    tools:context=".SignUpScreen">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout51"
+        android:id="@+id/constraintLayout5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,12 +20,13 @@
             android:layout_width="@dimen/back_arrow"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="16dp"
             android:scaleType="centerCrop"
             android:src="?attr/homeAsUpIndicator"
+            app:tint="@color/white"
+            android:tintMode="src_in"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/white" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <!--        <ImageView-->
         <!--            android:id="@+id/img_bubbles"-->
@@ -47,9 +48,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:fontFamily="@font/roboto"
-            android:text="Kiprotich, "
-            android:textAllCaps="false"
-            android:textColor="@color/white"
+            android:text="MyHealth, "
+            android:textColor="@android:color/white"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/textView18"
@@ -61,9 +61,9 @@
             android:id="@+id/textView18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="32dp"
             android:fontFamily="@font/poppins"
-            android:text="Welcome back"
+            android:text="Welcome to"
             android:textColor="@color/white"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="@+id/img_home"
@@ -73,8 +73,8 @@
             android:id="@+id/textView21"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
             android:fontFamily="@font/roboto"
             android:text="Create your free account and find the care you need"
             android:textColor="@color/white"
@@ -85,26 +85,29 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayoutSignIn"
+        android:id="@+id/tabLayoutSignUp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/round_top1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent=".1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout51"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"
+        app:tabGravity="fill"
         app:tabIndicatorAnimationMode="elastic"
         app:tabIndicatorColor="@color/colorPrimaryLight"
+        app:tabMaxWidth="0dp"
         app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
         app:tabTextColor="@color/colorPrimaryLight">
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tab_phone_login"
+            android:id="@+id/tab_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Phone" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tab_email_login"
+            android:id="@+id/tab_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Email" />
@@ -113,7 +116,7 @@
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager
-        android:id="@+id/pagerSignIn"
+        android:id="@+id/pagerSignUp"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/white"
@@ -121,7 +124,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayoutSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayoutSignUp"
         tools:ignore="SpeakableTextPresentCheck">
 
     </androidx.viewpager.widget.ViewPager>

@@ -1,14 +1,276 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
     tools:context=".Fragments.ExploreFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView47"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:lineSpacingExtra="11sp"
+                        android:text="Explore MyHealth"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:lineHeight="27sp" />
+
+                    <SearchView
+                        android:id="@+id/searchView2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/bg_input"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView47"
+                        app:layout_constraintStart_toStartOf="@+id/textView47"
+                        app:layout_constraintTop_toBottomOf="@+id/textView47" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/round_top"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Specialty"
+                            android:textColor=" #2b4660"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="See All"
+                            android:textColor="@color/colorPrimary"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/textView50" />
+
+                        <include
+                            android:id="@+id/include2"
+                            layout="@layout/recycler_specialty"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+                        <TextView
+                            android:id="@+id/textView52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="My Health Services"
+                            android:textColor=" #2b4660"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/include2" />
+
+                        <TextView
+                            android:id="@+id/textView53"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:lineSpacingExtra="4sp"
+                            android:text="See All"
+                            android:textColor="@color/colorPrimary"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView52"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/textView52"
+                            app:lineHeight="16sp" />
+
+                        <include
+                            android:id="@+id/include3"
+                            layout="@layout/recycler_services"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+                        <TextView
+                            android:id="@+id/textView54"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Top Doctors"
+                            android:textColor=" #2b4660"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/include3" />
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:lineSpacingExtra="4sp"
+                            android:text="See All"
+                            android:textColor="@color/colorPrimary"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView54"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/textView54"
+                            app:lineHeight="16sp" />
+
+                        <include
+                            android:id="@+id/include4"
+                            layout="@layout/recycler_doctors"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+                        <TextView
+                            android:id="@+id/textView56"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:text="Medical Packages"
+                            android:textColor=" #2b4660"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/include4" />
+
+                        <TextView
+                            android:id="@+id/textView57"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:lineSpacingExtra="4sp"
+                            android:text="See All"
+                            android:textColor="@color/colorPrimary"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView56"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/textView56"
+                            app:lineHeight="16sp" />
+
+                        <include
+                            android:id="@+id/include5"
+                            layout="@layout/recycler_packages"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+                        <TextView
+                            android:id="@+id/textView58"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:text="Discounts &amp; Promotions"
+                            android:textColor=" #2b4660"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/include5" />
+
+                        <TextView
+                            android:id="@+id/textView59"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:lineSpacingExtra="4sp"
+                            android:text="See All"
+                            android:textColor="@color/colorPrimary"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView58"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/textView58"
+                            app:lineHeight="16sp" />
+
+                        <include
+                            android:id="@+id/include6"
+                            layout="@layout/recycler_promotions"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="32dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </FrameLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

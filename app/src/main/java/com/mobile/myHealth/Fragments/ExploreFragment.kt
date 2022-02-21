@@ -5,56 +5,178 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.mobile.myHealth.R
+import androidx.recyclerview.widget.PagerSnapHelper
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+import androidx.recyclerview.widget.SnapHelper
+import com.mobile.myHealth.Adapters.*
 
-/**
- * A simple [Fragment] subclass.
- * Use the [ExploreFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+
 class ExploreFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var recyclerView1: RecyclerView
+    private lateinit var recyclerView2: RecyclerView
+    private lateinit var recyclerView3: RecyclerView
+    private lateinit var recyclerView4: RecyclerView
+    private lateinit var adapter: SpecialtyRecyclerAdapter
+    private lateinit var adapter1: ServicesAdapter
+    private lateinit var adapter2: DoctorRecyclerAdapter
+    private lateinit var adapter3: PackageRecyclerAdapter
+    private lateinit var adapter4: DiscountsPromotionsAdapter
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+
+
+    private val itemsList = ArrayList<String>()
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                              savedInstanceState: Bundle?): View? {
+
+        val view = inflater.inflate(R.layout.fragment_explore, container, false)
+
+        val specialtyIcon = view.findViewById<ImageView>(R.id.img_specialty_icon)
+        val specialtyTitle = view.findViewById<ImageView>(R.id.tv_specialty_title)
+        val specialtyNo = view.findViewById<ImageView>(R.id.tv_specialty_no)
+        recyclerView = view.findViewById(R.id.recyclerSpecialty)
+        recyclerView1 = view.findViewById(R.id.recyclerServices)
+        recyclerView2 = view.findViewById(R.id.recyclerDoctor)
+        recyclerView3 = view.findViewById(R.id.recyclerPackages)
+        recyclerView4 = view.findViewById(R.id.recyclerDiscountsPromotions)
+
+
+
+        specialty()
+        services()
+        doctors()
+        packages()
+        promos()
+
+        return view
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_explore, container, false)
+    private fun specialty() {
+
+        recyclerView.layoutManager = LinearLayoutManager(activity)
+        adapter = SpecialtyRecyclerAdapter(itemsList)
+        recyclerView.adapter = adapter
+        recyclerView.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
+        val snapHelper: SnapHelper = PagerSnapHelper()
+        snapHelper.attachToRecyclerView(recyclerView)
+
+        itemsList.add("Item 1")
+        itemsList.add("Item 2")
+        itemsList.add("Item 3")
+        itemsList.add("Item 4")
+        itemsList.add("Item 5")
+        itemsList.add("Item 6")
+        itemsList.add("Item 7")
+        itemsList.add("Item 8")
+        itemsList.add("Item 9")
+        itemsList.add("Item 10")
+        itemsList.add("Item 11")
+        itemsList.add("Item 12")
+        itemsList.add("Item 13")
+        adapter.notifyDataSetChanged()
+    }
+    private fun services() {
+        recyclerView1.layoutManager = LinearLayoutManager(activity)
+        adapter1 = ServicesAdapter(itemsList)
+        recyclerView1.adapter = adapter1
+        recyclerView1.layoutManager = LinearLayoutManager(activity, LinearLayoutManager
+            .HORIZONTAL, false)
+        val snapHelper: SnapHelper = PagerSnapHelper()
+        snapHelper.attachToRecyclerView(recyclerView1)
+
+        itemsList.add("Item 1")
+        itemsList.add("Item 2")
+        itemsList.add("Item 3")
+        itemsList.add("Item 4")
+        itemsList.add("Item 5")
+        itemsList.add("Item 6")
+        itemsList.add("Item 7")
+        itemsList.add("Item 8")
+        itemsList.add("Item 9")
+        itemsList.add("Item 10")
+        itemsList.add("Item 11")
+        itemsList.add("Item 12")
+        itemsList.add("Item 13")
+        adapter1.notifyDataSetChanged()
+    }
+    private fun doctors() {
+        recyclerView2.layoutManager = LinearLayoutManager(activity)
+        adapter2 = DoctorRecyclerAdapter(itemsList)
+        recyclerView2.adapter = adapter2
+        recyclerView2.layoutManager = LinearLayoutManager(activity, LinearLayoutManager
+            .HORIZONTAL, false)
+        val snapHelper: SnapHelper = PagerSnapHelper()
+        snapHelper.attachToRecyclerView(recyclerView2)
+
+        itemsList.add("Item 1")
+        itemsList.add("Item 2")
+        itemsList.add("Item 3")
+        itemsList.add("Item 4")
+        itemsList.add("Item 5")
+        itemsList.add("Item 6")
+        itemsList.add("Item 7")
+        itemsList.add("Item 8")
+        itemsList.add("Item 9")
+        itemsList.add("Item 10")
+        itemsList.add("Item 11")
+        itemsList.add("Item 12")
+        itemsList.add("Item 13")
+        adapter2.notifyDataSetChanged()
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment ExploreFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            ExploreFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    private fun packages() {
+        recyclerView3.layoutManager = LinearLayoutManager(activity)
+        adapter3 = PackageRecyclerAdapter(itemsList)
+        recyclerView3.adapter = adapter3
+        recyclerView3.layoutManager = LinearLayoutManager(activity, LinearLayoutManager
+            .HORIZONTAL, false)
+        val snapHelper: SnapHelper = PagerSnapHelper()
+        snapHelper.attachToRecyclerView(recyclerView3)
+
+        itemsList.add("Item 1")
+        itemsList.add("Item 2")
+        itemsList.add("Item 3")
+        itemsList.add("Item 4")
+        itemsList.add("Item 5")
+        itemsList.add("Item 6")
+        itemsList.add("Item 7")
+        itemsList.add("Item 8")
+        itemsList.add("Item 9")
+        itemsList.add("Item 10")
+        itemsList.add("Item 11")
+        itemsList.add("Item 12")
+        itemsList.add("Item 13")
+        adapter3.notifyDataSetChanged()
     }
+
+    private fun promos() {
+        recyclerView4.layoutManager = LinearLayoutManager(activity)
+        adapter4 = DiscountsPromotionsAdapter(itemsList)
+        recyclerView4.adapter = adapter4
+        recyclerView4.layoutManager = LinearLayoutManager(activity, LinearLayoutManager
+            .HORIZONTAL, false)
+        val snapHelper: SnapHelper = PagerSnapHelper()
+        snapHelper.attachToRecyclerView(recyclerView4)
+
+        itemsList.add("Item 1")
+        itemsList.add("Item 2")
+        itemsList.add("Item 3")
+        itemsList.add("Item 4")
+        itemsList.add("Item 5")
+        itemsList.add("Item 6")
+        itemsList.add("Item 7")
+        itemsList.add("Item 8")
+        itemsList.add("Item 9")
+        itemsList.add("Item 10")
+        itemsList.add("Item 11")
+        itemsList.add("Item 12")
+        itemsList.add("Item 13")
+        adapter4.notifyDataSetChanged()
+    }
+
 }

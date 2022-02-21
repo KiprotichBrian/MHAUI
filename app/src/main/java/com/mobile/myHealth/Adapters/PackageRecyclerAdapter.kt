@@ -1,5 +1,7 @@
 package com.mobile.myHealth.Adapters
 
+import android.opengl.ETC1.getWidth
+import android.util.DisplayMetrics
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -25,7 +27,7 @@ class PackageRecyclerAdapter (private var itemsList: List<String>): RecyclerView
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.card_medical_package, parent, false)
+            .inflate(R.layout.item_medical_package, parent, false)
 
         return ViewHolder(view)
     }

@@ -57,10 +57,6 @@
             android:exported="false"
             android:theme="@style/Theme.NoActionBar" />
         <activity
-            android:name=".HospitalProfile"
-            android:exported="false"
-            android:theme="@style/Theme.NoActionBar" />
-        <activity
             android:name=".ForgotPassword"
             android:exported="false"
             android:theme="@style/Theme.NoActionBar" />
