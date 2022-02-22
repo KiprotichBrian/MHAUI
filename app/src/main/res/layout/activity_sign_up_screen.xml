@@ -88,7 +88,7 @@
         android:id="@+id/tabLayoutSignUp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/round_top"
+        android:background="@drawable/round_top1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent=".1"
         app:layout_constraintStart_toStartOf="parent"
